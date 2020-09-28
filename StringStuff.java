@@ -14,8 +14,9 @@ public class StringStuff {
    * Creating the convertchar() function
   */
   
-  public static String convertchar(String userInput)  {
-    charToParse[] = 
+  public static String blowup(String userInput)  {
+    char[] charArray = userInput.toCharArray();
+    return userInput;
   }
   
   public static void main(String[] args) {
@@ -28,6 +29,9 @@ public class StringStuff {
     Scanner input = new Scanner(System.in);
     String userInput = input.next();
     
+    String testVal = blowup(userInput);
+    
     System.out.println(userInput);
+    System.out.println(testVal);
   }
 }
